@@ -54,7 +54,7 @@ export const metadata: Metadata = {
   ],
   metadataBase: new URL("https://manikantasafetysolutions.in"),
   verification: {
-    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "GOOGLE_SEARCH_CONSOLE_VERIFICATION_CODE",
+    google: "bDnWp1qgm2u4D428LPqArNcZBsOwj0pYC44cnv3hNc8",
   },
   alternates: {
     canonical: "/",
@@ -107,6 +107,7 @@ export default function RootLayout({
         {/* Favicon SVG tag */}
         <link rel="icon" type="image/svg+xml" href="/icon.svg" />
         <link rel="apple-touch-icon" href="/icon.svg" />
+        <meta name="google-site-verification" content="bDnWp1qgm2u4D428LPqArNcZBsOwj0pYC44cnv3hNc8" />
       </head>
       <body
         className={`${inter.variable} ${geistSans.variable} ${geistMono.variable} antialiased bg-white text-slate-900 flex flex-col min-h-screen selection:bg-[#E8972F] selection:text-white`}

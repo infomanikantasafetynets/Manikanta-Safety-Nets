@@ -7,7 +7,7 @@ import ServicePromoTicker from "@/components/sections/ServicePromoTicker";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Ceiling Cloth Hangers | Manikanta Safety Solutions - Safety Nets & Invisible Grills Bangalore, Karnataka",
+  title: "Ceiling & Balcony Cloth Drying Hangers in Bangalore | Manikanta Safety Solutions",
   description:
     "Rust-proof ceiling-mounted pulley cloth drying hangers installed in balconies and utility spaces by Manikanta Safety Solutions across Bangalore: Whitefield, Koramangala, Indiranagar, HSR Layout, Electronic City, Marathahalli, and Sarjapur Road.",
   alternates: {

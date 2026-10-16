@@ -34,8 +34,8 @@ export async function generateMetadata({ params }: PageProps) {
     };
   }
 
-  const title = `Safety Nets & Invisible Grills in ${areaDetail.name} | Manikanta Safety Solutions Bangalore, Karnataka`;
-  const description = `Manikanta Safety Solutions provides professional balcony safety nets, pigeon netting, and SS316 invisible grills in ${areaDetail.name}, Bangalore, Karnataka. Free doorstep inspection across ${areaDetail.localities.slice(0, 5).join(", ")}. Call +91 95503 18183.`;
+  const title = `Safety Nets & Invisible Grills in ${areaDetail.name} | Manikanta Safety Solutions`;
+  const description = `Manikanta Safety Solutions provides professional balcony safety nets, pigeon netting, and SS316 invisible grills in ${areaDetail.name}, Bangalore. Free doorstep inspection across ${areaDetail.localities.slice(0, 5).join(", ")}. Call +91 95503 18183.`;
 
   return {
     title,

@@ -7,9 +7,9 @@ import ServicePromoTicker from "@/components/sections/ServicePromoTicker";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Our Services | Manikanta Safety Solutions - Safety Nets & Invisible Grills Bangalore, Karnataka",
+  title: "19 Services: Safety Nets, Invisible Grills & Cloth Hangers in Bangalore | Manikanta Safety Solutions",
   description:
-    "Explore 18+ safety net solutions, invisible grills, and ceiling cloth hangers by Manikanta Safety Solutions across Bangalore: Whitefield, Koramangala, Indiranagar, HSR Layout, Electronic City, Marathahalli, and Sarjapur Road.",
+    "Looking for safety nets, invisible grills, or cloth drying hangers in Bangalore? Explore all 19 certified installation services from Manikanta Safety Solutions across Bangalore.",
   alternates: {
     canonical: "/services",
   },

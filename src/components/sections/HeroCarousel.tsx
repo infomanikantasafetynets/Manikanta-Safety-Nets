@@ -20,9 +20,9 @@ interface Slide {
 const slides: Slide[] = [
   {
     id: 1,
-    title: "Next-Generation High-Rise Safety &",
-    highlight: "SS316 Architectural Invisible Grills",
-    subtitle: "Safeguard your loved ones with structural-grade stainless steel wire systems and certified safety netting tailored for Bangalore's high-rise towers.",
+    title: "Safety Nets, Invisible Grills &",
+    highlight: "Cloth Hangers in Bangalore",
+    subtitle: "Looking for safety nets, invisible grills, or cloth drying hangers in Bangalore? Explore 19 certified installation services from Manikanta Safety Solutions with flat 20% discount and 10-year warranty.",
     image: "/images/main-images/Balcony-Grills.jpg",
     altText: "Manikanta Safety Solutions custom SS316 marine-grade invisible balcony grills overlooking Bangalore skyline",
     ctaText: "Explore Invisible Grills (20% OFF)",

@@ -45,8 +45,8 @@ export async function generateMetadata({ params }: PageProps) {
     };
   }
 
-  const title = `${serviceDetail.name} in ${areaDetail.name} | Flat 20% OFF & 10-Yr Warranty - Manikanta Safety Solutions`;
-  const description = `Get expert ${serviceDetail.name} installation in ${areaDetail.name}, Bangalore, Karnataka. UV-treated virgin HDPE mesh, SS316 marine invisible grills, 10-year warranty, Flat 20% discount, and free doorstep measurement across ${areaDetail.localities.slice(0, 5).join(", ")}. Call +91 95503 18183.`;
+  const title = `${serviceDetail.name} in ${areaDetail.name} | Manikanta Safety Solutions`;
+  const description = `Certified ${serviceDetail.name} installation in ${areaDetail.name}, Bangalore. Free doorstep inspection across ${areaDetail.localities.slice(0, 4).join(", ")}. Flat 20% discount & 10-year warranty. Call +91 95503 18183.`;
 
   return {
     title,

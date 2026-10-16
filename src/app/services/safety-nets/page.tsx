@@ -7,7 +7,7 @@ import ServicePromoTicker from "@/components/sections/ServicePromoTicker";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Balcony & Safety Nets | Manikanta Safety Solutions - Safety Nets & Invisible Grills Bangalore, Karnataka",
+  title: "Safety Nets in Bangalore | Manikanta Safety Solutions",
   description:
     "High-tensile UV-treated balcony safety nets, pigeon nets, child protection nets, and pet safety nets installed by Manikanta Safety Solutions across Bangalore: Whitefield, Koramangala, Indiranagar, HSR Layout, Electronic City, Marathahalli, and Sarjapur Road.",
   alternates: {

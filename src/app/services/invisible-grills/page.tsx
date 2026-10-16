@@ -7,7 +7,7 @@ import ServicePromoTicker from "@/components/sections/ServicePromoTicker";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Invisible Grills | Manikanta Safety Solutions - Safety Nets & Invisible Grills Bangalore, Karnataka",
+  title: "Invisible Grills in Bangalore | Manikanta Safety Solutions",
   description:
     "Stainless steel 316 marine-grade invisible grills for balconies, windows, and staircases by Manikanta Safety Solutions across Bangalore: Whitefield, Koramangala, Indiranagar, HSR Layout, Electronic City, Marathahalli, and Sarjapur Road.",
   alternates: {

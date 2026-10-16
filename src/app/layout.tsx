@@ -30,20 +30,20 @@ import { generateLocalBusinessSchema } from "@/utils/schema";
 
 export const metadata: Metadata = {
   title: {
-    default: "Manikanta Safety Solutions | Safety Nets & Invisible Grills Bangalore, Karnataka",
-    template: "%s | Manikanta Safety Solutions - Safety Nets & Invisible Grills Bangalore, Karnataka",
+    default: "Safety Nets & Invisible Grills in Bangalore | Manikanta Safety Solutions",
+    template: "%s",
   },
   description:
-    "Manikanta Safety Solutions provides premium balcony safety nets, anti-bird netting, child fall protection, and SS316 invisible grills across Bangalore, including Whitefield, Koramangala, Indiranagar, HSR Layout, Electronic City, Marathahalli, Jayanagar, Yelahanka, JP Nagar, and Sarjapur Road.",
+    "Looking for safety nets, invisible grills, or cloth drying hangers in Bangalore? Explore 19 services from Manikanta Safety Solutions and contact us for an enquiry.",
   keywords: [
-    "Safety Nets Bangalore, Karnataka",
-    "Invisible Grills Bangalore, Karnataka",
-    "Balcony Safety Nets Bangalore, Karnataka",
-    "Pigeon Safety Nets Bangalore, Karnataka",
-    "Window Invisible Grills Bangalore, Karnataka",
-    "Ceiling Cloth Hangers Bangalore, Karnataka",
-    "Anti Bird Spikes Bangalore, Karnataka",
-    "Manikanta Safety Solutions Bangalore, Karnataka",
+    "Safety Nets in Bangalore",
+    "Invisible Grills in Bangalore",
+    "Balcony Safety Nets Bangalore",
+    "Pigeon Safety Nets Bangalore",
+    "Window Invisible Grills Bangalore",
+    "Ceiling Cloth Hangers Bangalore",
+    "Anti Bird Spikes Bangalore",
+    "Manikanta Safety Solutions",
     "Safety Nets Whitefield",
     "Safety Nets Koramangala",
     "Safety Nets Indiranagar",
@@ -69,9 +69,9 @@ export const metadata: Metadata = {
     ],
   },
   openGraph: {
-    title: "Manikanta Safety Solutions | Safety Nets & Invisible Grills Bangalore, Karnataka",
+    title: "Safety Nets & Invisible Grills in Bangalore | Manikanta Safety Solutions",
     description:
-      "Expert safety netting and modern invisible grill installation in Bangalore across Whitefield, Koramangala, Indiranagar, HSR Layout, Electronic City, Marathahalli, Jayanagar, Yelahanka, JP Nagar, and Sarjapur Road.",
+      "Looking for safety nets, invisible grills, or cloth drying hangers in Bangalore? Explore 19 services from Manikanta Safety Solutions and contact us for an enquiry.",
     url: "https://manikantasafetysolutions.in",
     siteName: "Manikanta Safety Solutions",
     images: [
@@ -79,7 +79,7 @@ export const metadata: Metadata = {
         url: "/images/og-image.webp",
         width: 1200,
         height: 630,
-        alt: "Manikanta Safety Solutions - Safety Nets & Invisible Grills Bangalore, Karnataka",
+        alt: "Safety Nets & Invisible Grills in Bangalore - Manikanta Safety Solutions",
       },
     ],
     locale: "en_IN",
@@ -87,9 +87,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Manikanta Safety Solutions | Safety Nets & Invisible Grills Bangalore, Karnataka",
+    title: "Safety Nets & Invisible Grills in Bangalore | Manikanta Safety Solutions",
     description:
-      "Premium safety nets and invisible grill installers in Bangalore serving Whitefield, Koramangala, Indiranagar, HSR Layout, Electronic City, Marathahalli, Jayanagar, and Yelahanka.",
+      "Looking for safety nets, invisible grills, or cloth drying hangers in Bangalore? Explore 19 services from Manikanta Safety Solutions and contact us for an enquiry.",
     images: ["/images/og-image.webp"],
   },
 };

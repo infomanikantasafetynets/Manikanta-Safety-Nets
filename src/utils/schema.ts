@@ -22,26 +22,29 @@ export const CITIES_BANGALORE = [
 
 export const CITIES_ANDHRA_PRADESH = CITIES_BANGALORE; // Backwards compatibility alias
 
-export const ALL_18_SERVICES = [
+export const ALL_19_SERVICES = [
   "Balcony Safety Nets",
   "Children Safety Nets",
   "Pet Safety Nets",
   "Pigeon Safety Nets",
   "Monkey Safety Nets",
-  "Cricket Nets",
-  "Sports Nets",
+  "Cricket Practice Nets",
+  "Sports Netting",
   "Construction Safety Nets",
   "Duct Area Safety Nets",
   "Anti-Bird Spikes",
+  "Mosquito Nets for Windows & Balconies",
   "Balcony Invisible Grills",
+  "Children Invisible Grills",
+  "Pet Invisible Grills",
   "Window Invisible Grills",
-  "Staircase Invisible Grills",
-  "Custom Invisible Grills",
-  "Ceiling Cloth Hangers",
-  "Balcony Cloth Hangers",
+  "Staircase & Duplex Invisible Grills",
+  "Ceiling Cloth Drying Hangers",
+  "Balcony Cloth Drying Hangers",
   "Wall Mounted Cloth Hangers",
-  "Pull Down Cloth Hangers",
 ];
+
+export const ALL_18_SERVICES = ALL_19_SERVICES; // Backwards compatibility
 
 export function generateOrganizationSchema() {
   return {

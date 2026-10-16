@@ -27,8 +27,8 @@ export async function generateMetadata({ params }: PageProps) {
     };
   }
 
-  const title = `${serviceDetail.name} | Manikanta Safety Solutions - Safety Nets & Invisible Grills Bangalore, Karnataka`;
-  const description = `${serviceDetail.description} Professional installation by Manikanta Safety Solutions in Bangalore across Whitefield, Koramangala, Indiranagar, HSR Layout, Electronic City, Marathahalli, and Sarjapur Road.`;
+  const title = serviceDetail.title || `${serviceDetail.name} in Bangalore | Manikanta Safety Solutions`;
+  const description = `${serviceDetail.description} Professional doorstep installation across Bangalore by Manikanta Safety Solutions with 10-year replacement warranty & 20% discount.`;
 
   return {
     title,

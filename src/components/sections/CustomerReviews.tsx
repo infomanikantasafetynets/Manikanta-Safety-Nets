@@ -104,8 +104,8 @@ export default function CustomerReviews() {
 
               <div className="pt-4 border-t border-[#1B6868]/60 flex items-center justify-between">
                 <div>
-                  <h4 className="text-sm font-bold text-white">{review.name}</h4>
-                  <div className="flex items-center gap-1 text-slate-400 text-[11px] mt-0.5">
+                  <h3 className="text-sm font-bold text-white">{review.name}</h3>
+                  <div className="flex items-center gap-1 text-slate-300 text-xs mt-0.5">
                     <MapPin className="w-3 h-3 text-[#E8972F]" />
                     <span>{review.locality}</span>
                   </div>

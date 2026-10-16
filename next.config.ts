@@ -48,16 +48,6 @@ const nextConfig: NextConfig = {
           },
         ],
       },
-      {
-        // Next.js optimised image endpoint — allow generous stale-while-revalidate
-        source: "/_next/image(.*)",
-        headers: [
-          {
-            key: "Cache-Control",
-            value: "public, max-age=86400, stale-while-revalidate=604800",
-          },
-        ],
-      },
     ];
   },
 };

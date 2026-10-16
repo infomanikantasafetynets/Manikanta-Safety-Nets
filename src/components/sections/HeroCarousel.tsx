@@ -113,28 +113,35 @@ export default function HeroCarousel() {
   return (
     <section className="relative min-h-[580px] sm:min-h-[640px] md:min-h-[700px] bg-slate-950 overflow-hidden flex items-center">
       {/* Background Image Carousel with Smooth Fade & Zero Color Tint */}
-      {slides.map((s, idx) => (
-        <div
-          key={s.id}
-          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-            idx === current ? "opacity-100 z-0" : "opacity-0 pointer-events-none -z-10"
-          }`}
-        >
-          <Image
-            src={s.image}
-            alt={s.altText}
-            fill
-            priority={idx === 0}
-            loading={idx === 0 ? "eager" : "lazy"}
-            sizes="(max-width: 768px) 100vw, 100vw"
-            className="object-cover object-center"
-            quality={75}
-          />
-          {/* Clean Natural Scrim Overlay: Eliminates heavy green/teal tint so real installations are crisp and visible */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/45 to-transparent sm:via-black/25" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-black/20" />
-        </div>
-      ))}
+      {slides.map((s, idx) => {
+        const isVisible = idx === current;
+        // Preload slide 0 for LCP; load others only when active or adjacent
+        const shouldLoadImage = idx === 0 || isVisible || Math.abs(idx - current) <= 1;
+
+        return (
+          <div
+            key={s.id}
+            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+              isVisible ? "opacity-100 z-0" : "opacity-0 pointer-events-none -z-10"
+            }`}
+          >
+            {shouldLoadImage && (
+              <Image
+                src={s.image}
+                alt={s.altText}
+                fill
+                priority={idx === 0}
+                sizes="100vw"
+                className="object-cover object-center"
+                quality={70}
+              />
+            )}
+            {/* Clean Natural Scrim Overlay: Eliminates heavy green/teal tint so real installations are crisp and visible */}
+            <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/45 to-transparent sm:via-black/25" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-black/20" />
+          </div>
+        );
+      })}
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
@@ -223,7 +230,7 @@ export default function HeroCarousel() {
                   <Shield className="w-6 h-6" />
                 </div>
                 <div>
-                  <h3 className="text-base font-bold text-white">Certified Protection</h3>
+                  <div className="text-base font-bold text-white">Certified Protection</div>
                   <p className="text-xs text-slate-300">Bangalore High-Rise Rigging Specialist</p>
                 </div>
               </div>
@@ -287,8 +294,8 @@ export default function HeroCarousel() {
         </button>
       </div>
 
-      {/* Slide Indicator Dots */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 sm:left-10 sm:translate-x-0 z-20 flex items-center gap-2">
+      {/* Slide Indicator Dots with 44px Accessible Touch Targets */}
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 sm:left-10 sm:translate-x-0 z-20 flex items-center gap-1">
         {slides.map((s, idx) => (
           <button
             key={s.id}
@@ -296,11 +303,15 @@ export default function HeroCarousel() {
               setIsAutoPlay(false);
               setCurrent(idx);
             }}
-            className={`h-2 rounded-full transition-all duration-300 cursor-pointer ${
-              idx === current ? "w-8 bg-[#E8972F]" : "w-2 bg-white/40 hover:bg-white/70"
-            }`}
+            className="min-w-[44px] min-h-[44px] flex items-center justify-center p-2 cursor-pointer transition-transform hover:scale-110"
             aria-label={`Go to slide ${idx + 1}`}
-          />
+          >
+            <span
+              className={`h-2.5 rounded-full transition-all duration-300 block ${
+                idx === current ? "w-8 bg-[#E8972F]" : "w-2.5 bg-white/50 hover:bg-white/80"
+              }`}
+            />
+          </button>
         ))}
       </div>
     </section>

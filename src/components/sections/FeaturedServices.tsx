@@ -131,7 +131,7 @@ export default function FeaturedServices() {
                         <h3 className="text-xl sm:text-2xl font-black text-[#0D5C5C]">
                           {cat.name}
                         </h3>
-                        <span className="bg-[#E8972F]/15 text-[#E8972F] text-xs font-extrabold px-2.5 py-0.5 rounded-full">
+                        <span className="bg-amber-100 text-amber-950 border border-amber-300 text-xs font-black px-2.5 py-0.5 rounded-full">
                           {cat.services.length} Services
                         </span>
                       </div>
@@ -143,9 +143,10 @@ export default function FeaturedServices() {
 
                   <Link
                     href={`/services/${cat.id}`}
+                    aria-label={`View all ${cat.name} services and pricing`}
                     className="inline-flex items-center gap-2 text-xs font-extrabold uppercase tracking-wider text-[#0D5C5C] hover:text-[#E8972F] transition-colors self-start md:self-auto"
                   >
-                    <span>View Category Details</span>
+                    <span>View {cat.name} Details</span>
                     <ArrowRight className="w-4 h-4 text-[#E8972F]" />
                   </Link>
                 </div>
@@ -267,7 +268,7 @@ export default function FeaturedServices() {
           <div className="flex flex-col sm:flex-row gap-3 shrink-0 w-full sm:w-auto">
             <a
               href="tel:9550318183"
-              className="bg-[#E8972F] hover:bg-[#F5B054] text-white font-black px-6 py-3.5 rounded-xl text-sm flex items-center justify-center gap-2 shadow-md transition-all cursor-pointer"
+              className="bg-[#E8972F] hover:bg-[#F5B054] text-slate-950 font-black px-6 py-3.5 rounded-xl text-sm flex items-center justify-center gap-2 shadow-md transition-all cursor-pointer"
             >
               <Phone className="w-4 h-4" />
               <span>Call 95503 18183</span>
@@ -276,7 +277,7 @@ export default function FeaturedServices() {
               href="https://wa.me/919550318183?text=Hi%20Manikanta%20Safety%20Solutions,%20I%20would%20like%20to%20book%20a%20free%20doorstep%20measurement%20in%20Bangalore."
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#25D366] hover:bg-emerald-600 text-white font-black px-6 py-3.5 rounded-xl text-sm flex items-center justify-center gap-2 shadow-md transition-all cursor-pointer"
+              className="bg-[#25D366] hover:bg-emerald-400 text-slate-950 font-black px-6 py-3.5 rounded-xl text-sm flex items-center justify-center gap-2 shadow-md transition-all cursor-pointer"
             >
               <MessageSquare className="w-4 h-4" />
               <span>WhatsApp Booking</span>

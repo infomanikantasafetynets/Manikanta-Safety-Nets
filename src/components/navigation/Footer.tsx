@@ -104,10 +104,18 @@ export default function Footer() {
                 <Phone className="w-4 h-4 text-[#E8972F] shrink-0 mt-1" />
                 <div className="flex flex-col gap-1">
                   <span className="font-bold text-white block">Phone</span>
-                  <a href="tel:+919550318183" className="hover:text-[#E8972F] transition-colors text-white font-semibold flex items-center gap-1.5">
-                    <span>+91 95503 18183</span>
+                  <a
+                    href="tel:+919550318183"
+                    className="hover:text-[#E8972F] transition-colors text-white font-semibold flex items-center gap-1.5 min-h-[44px] py-1"
+                    aria-label="Call Primary Phone Number +91 95503 18183"
+                  >
+                    <span>+91 95503 18183 (Primary)</span>
                   </a>
-                  <a href="tel:+917013818183" className="hover:text-[#E8972F] transition-colors text-slate-300 text-xs flex items-center gap-1.5">
+                  <a
+                    href="tel:+917013818183"
+                    className="hover:text-[#E8972F] transition-colors text-slate-200 text-sm flex items-center gap-1.5 min-h-[44px] py-1"
+                    aria-label="Call Alternate Phone Number +91 70138 18183"
+                  >
                     <span>+91 70138 18183 (Alt)</span>
                   </a>
                 </div>

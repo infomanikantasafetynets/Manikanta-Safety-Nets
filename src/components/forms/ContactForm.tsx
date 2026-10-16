@@ -119,21 +119,21 @@ export default function ContactForm() {
             </div>
 
             <div className="flex flex-col gap-4 mt-2">
-              <div className="flex items-center gap-4 bg-white/10 backdrop-blur-xs p-5 rounded-2xl border border-white/10 hover:border-[#E8972F]/50 hover:shadow-md transition-all">
-                <div className="p-3 bg-[#E8972F] text-white rounded-xl shrink-0">
+              <div className="flex items-center gap-4 bg-white/15 backdrop-blur-xs p-5 rounded-2xl border border-white/20 hover:border-[#E8972F]/50 hover:shadow-md transition-all">
+                <div className="p-3 bg-[#E8972F] text-slate-950 rounded-xl shrink-0 font-black">
                   <Phone className="w-5 h-5" />
                 </div>
                 <div className="flex flex-col gap-1">
-                  <span className="text-[10px] uppercase font-bold text-slate-300 block tracking-wider">
+                  <span className="text-xs uppercase font-extrabold text-amber-300 block tracking-wider">
                     Direct Phone / Call Booking
                   </span>
                   <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
-                    <a href="tel:+919550318183" className="text-sm sm:text-base font-bold text-white hover:text-[#E8972F] transition-colors">
-                      +91 95503 18183 <span className="text-[10px] font-normal text-slate-300">(Primary)</span>
+                    <a href="tel:+919550318183" className="text-sm sm:text-base font-bold text-white hover:text-amber-200 transition-colors">
+                      +91 95503 18183 <span className="text-xs font-semibold text-amber-200">(Primary)</span>
                     </a>
-                    <span className="text-slate-400">|</span>
-                    <a href="tel:+917013818183" className="text-sm sm:text-base font-bold text-slate-200 hover:text-[#E8972F] transition-colors">
-                      +91 70138 18183 <span className="text-[10px] font-normal text-slate-400">(Alt)</span>
+                    <span className="text-slate-300">|</span>
+                    <a href="tel:+917013818183" className="text-sm sm:text-base font-bold text-white hover:text-amber-200 transition-colors">
+                      +91 70138 18183 <span className="text-xs font-semibold text-amber-200">(Alt)</span>
                     </a>
                   </div>
                 </div>
@@ -141,16 +141,16 @@ export default function ContactForm() {
 
               <a
                 href="mailto:info.manikantasafetynets@gmail.com"
-                className="flex items-center gap-4 bg-white/10 backdrop-blur-xs p-5 rounded-2xl border border-white/10 hover:border-[#E8972F]/50 hover:shadow-md transition-all group"
+                className="flex items-center gap-4 bg-white/15 backdrop-blur-xs p-5 rounded-2xl border border-white/20 hover:border-[#E8972F]/50 hover:shadow-md transition-all group"
               >
-                <div className="p-3 bg-[#E8972F] text-white rounded-xl shrink-0 group-hover:bg-[#F5B054] transition-colors duration-300">
+                <div className="p-3 bg-[#E8972F] text-slate-950 rounded-xl shrink-0 group-hover:bg-[#F5B054] transition-colors duration-300 font-black">
                   <Mail className="w-5 h-5" />
                 </div>
                 <div>
-                  <span className="text-[10px] uppercase font-bold text-slate-300 block tracking-wider">
+                  <span className="text-xs uppercase font-extrabold text-amber-300 block tracking-wider">
                     Email Inquiry
                   </span>
-                  <span className="text-sm sm:text-base font-bold text-white group-hover:text-[#E8972F] transition-colors truncate block max-w-[240px] sm:max-w-none">
+                  <span className="text-sm sm:text-base font-bold text-white group-hover:text-amber-200 transition-colors truncate block max-w-[240px] sm:max-w-none">
                     info.manikantasafetynets@gmail.com
                   </span>
                 </div>
@@ -325,11 +325,10 @@ export default function ContactForm() {
                   />
                 </div>
 
-                {/* Submit Button */}
                 <button
                   type="submit"
                   disabled={status === "loading"}
-                  className="w-full bg-[#E8972F] hover:bg-[#F5B054] text-white font-black py-4 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed text-sm focus:outline-hidden focus:ring-2 focus:ring-[#E8972F] focus:ring-offset-2"
+                  className="w-full bg-[#E8972F] hover:bg-[#F5B054] text-slate-950 font-black py-4 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed text-sm focus:outline-hidden focus:ring-2 focus:ring-[#E8972F] focus:ring-offset-2"
                 >
                   {status === "loading" ? (
                     <>

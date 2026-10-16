@@ -153,9 +153,9 @@ export default function Navbar() {
               href="https://wa.me/919550318183?text=Hi%20Manikanta%20Safety%20Solutions%2C%20I%20would%20like%20to%20claim%20the%20Flat%2020%25%20Discount%20and%2010%20Years%20Warranty%20for%20safety%20nets%2Finvisible%20grills."
               target="_blank"
               rel="noopener noreferrer"
-              className="flex sm:hidden items-center gap-1 bg-[#25D366]/20 hover:bg-[#25D366]/30 text-[#25D366] px-2.5 py-0.5 rounded border border-[#25D366]/40 text-[11px] font-bold transition-all"
+              className="flex sm:hidden items-center gap-1.5 bg-[#25D366] text-slate-950 px-2.5 py-0.5 rounded text-[11px] font-black shadow-xs transition-all"
             >
-              <span className="w-1.5 h-1.5 rounded-full bg-[#25D366] animate-pulse"></span>
+              <span className="w-1.5 h-1.5 rounded-full bg-slate-950 animate-pulse"></span>
               <span>WhatsApp Quote</span>
             </a>
 
@@ -337,8 +337,8 @@ export default function Navbar() {
                   <div key={link.label} className="relative py-2 group">
                     <Link
                       href={link.href}
-                      className={`text-sm font-bold tracking-wide transition-colors duration-200 py-1 ${
-                        isActive ? "text-[#E8972F]" : "text-[#0D5C5C] hover:text-[#E8972F]"
+                      className={`text-sm tracking-wide transition-colors duration-200 py-1 ${
+                        isActive ? "text-[#0D5C5C] font-black" : "text-[#0D5C5C] hover:text-[#C47312] font-bold"
                       }`}
                     >
                       {link.label}
@@ -353,22 +353,22 @@ export default function Navbar() {
 
             {/* RIGHT SIDE BUTTONS */}
             <div className="hidden lg:flex items-center gap-3">
-              {/* Call Now Button (Sky Blue) */}
+              {/* Call Now Button */}
               <a
                 href="tel:+919550318183"
-                className="bg-[#E8972F] hover:bg-[#F5B054] text-white font-extrabold flex items-center gap-2 px-5 py-2.5 rounded-full text-xs shadow-md transition-all"
+                className="bg-[#E8972F] hover:bg-[#F5B054] text-slate-950 font-black flex items-center gap-2 px-5 py-2.5 rounded-full text-xs shadow-md transition-all"
                 aria-label="Call Now"
               >
                 <Phone className="w-3.5 h-3.5" />
                 <span>Call Now</span>
               </a>
 
-              {/* WhatsApp Button (WhatsApp Green) */}
+              {/* WhatsApp Button */}
               <a
                 href="https://wa.me/919550318183?text=Hi%20Manikanta%20Safety%20Solutions%2C%20I%20would%20like%20to%20request%20a%20free%20quote%20for%20safety%20nets%2Finvisible%20grills."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 bg-[#25D366] hover:bg-[#20bd5a] text-white font-extrabold px-4 py-2.5 rounded-full shadow-md transition-all text-xs"
+                className="flex items-center gap-2 bg-[#25D366] hover:bg-emerald-400 text-slate-950 font-black px-4 py-2.5 rounded-full shadow-md transition-all text-xs"
                 aria-label="WhatsApp Us"
               >
                 <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

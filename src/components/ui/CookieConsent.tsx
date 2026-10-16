@@ -40,7 +40,7 @@ export default function CookieConsent() {
           <p>
             We use cookies to improve your browsing experience, analyze local traffic in Bangalore, and enhance security.
             Read our{" "}
-            <Link href="/privacy-policy" className="text-[#F5B054] hover:underline font-semibold">
+            <Link href="/privacy-policy" className="text-amber-200 hover:text-white underline font-bold">
               Privacy Policy
             </Link>
             .
@@ -56,7 +56,7 @@ export default function CookieConsent() {
         </button>
         <button
           onClick={acceptCookies}
-          className="px-4 py-1.5 rounded-lg text-xs font-bold bg-[#E8972F] hover:bg-[#F5B054] text-white transition-colors shadow-sm cursor-pointer"
+          className="px-4 py-1.5 rounded-lg text-xs font-black bg-[#E8972F] hover:bg-[#F5B054] text-slate-950 transition-colors shadow-sm cursor-pointer"
         >
           Accept Cookies
         </button>

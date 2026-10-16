@@ -107,7 +107,7 @@ export default function CostCalculator() {
             {/* Step 2: Slider for Area / Quantity */}
             <div>
               <div className="flex justify-between items-center mb-2">
-                <label className="text-xs font-extrabold uppercase tracking-wider text-slate-500">
+                <label htmlFor="installation-area-range" className="text-xs font-extrabold uppercase tracking-wider text-slate-700">
                   2. Approximate Area / Dimension
                 </label>
                 <span className="text-sm font-black text-[#0D5C5C] bg-[#F0F7F7] px-3 py-1 rounded-lg border border-[#B2DCDC]">
@@ -115,6 +115,8 @@ export default function CostCalculator() {
                 </span>
               </div>
               <input
+                id="installation-area-range"
+                aria-label="Approximate Area or Dimension in Square Feet"
                 type="range"
                 min="40"
                 max="600"

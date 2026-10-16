@@ -118,7 +118,7 @@ export default function RootLayout({
         />
 
         <Navbar />
-        <main className="flex-grow pt-[84px] sm:pt-[92px]">{children}</main>
+        <main className="flex-grow pt-[96px] sm:pt-[102px] lg:pt-[108px]">{children}</main>
         <Footer />
         <FloatingCTA />
         <CookieConsent />

@@ -167,23 +167,27 @@ export default function Navbar() {
       {/* PART 2 & 3: MAIN STICKY NAVBAR (White Background with Soft Shadow) */}
       <header
         className={`fixed top-[34px] left-0 right-0 z-40 transition-all duration-300 ease-in-out bg-white border-b border-[#E5E7EB] ${
-          isScrolled ? "shadow-md py-2.5" : "py-3.5"
+          isScrolled ? "shadow-md py-1.5 sm:py-2" : "py-2 sm:py-2.5"
         }`}
         ref={megaMenuRef}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             {/* LOGO */}
-            <div className="flex items-center shrink-0">
+            <Link
+              href="/"
+              className="flex items-center shrink-0 group focus:outline-none"
+              aria-label="Manikanta Safety Solutions Home"
+            >
               <Image
                 src="/images/main-images/Manikanta/manikanta-safety-solutions-logo.webp"
                 alt="Manikanta Safety Solutions - Safety Nets and Invisible Grills"
-                width={200}
-                height={80}
-                className="h-10 w-auto object-contain"
+                width={320}
+                height={106}
+                className="h-[52px] sm:h-[58px] md:h-[64px] lg:h-[68px] w-auto max-w-[220px] sm:max-w-[260px] md:max-w-none object-contain transition-transform duration-200 group-hover:scale-[1.02]"
                 priority
               />
-            </div>
+            </Link>
 
             {/* DESKTOP NAVIGATION LINKS WITH THIN RED UNDERLINE ANIMATION */}
             <nav className="hidden xl:flex items-center gap-6">
@@ -389,9 +393,23 @@ export default function Navbar() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="fixed top-[90px] left-0 right-0 z-40 bg-white border-b border-[#E5E7EB] shadow-2xl xl:hidden max-h-[calc(100vh-90px)] overflow-y-auto"
+            className="fixed top-[96px] sm:top-[102px] left-0 right-0 z-40 bg-white border-b border-[#E5E7EB] shadow-2xl xl:hidden max-h-[calc(100vh-96px)] sm:max-h-[calc(100vh-102px)] overflow-y-auto"
           >
-            <div className="px-4 py-6 space-y-4">
+            <div className="px-4 py-5 space-y-4">
+              {/* Brand Header inside Mobile Drawer */}
+              <div className="flex items-center justify-between pb-3.5 border-b border-slate-100">
+                <Image
+                  src="/images/main-images/Manikanta/manikanta-safety-solutions-logo.webp"
+                  alt="Manikanta Safety Solutions"
+                  width={240}
+                  height={80}
+                  className="h-11 sm:h-12 w-auto object-contain"
+                />
+                <span className="text-[11px] font-bold bg-[#E8972F]/10 text-[#0D5C5C] border border-[#E8972F]/30 px-2.5 py-1 rounded-full">
+                  ★ 4.9 (1,200+ Reviews)
+                </span>
+              </div>
+
               <div className="flex flex-col space-y-1">
                 {navLinks.map((link) => {
                   if (link.isMegaMenu) {

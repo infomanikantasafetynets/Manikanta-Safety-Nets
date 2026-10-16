@@ -1,0 +1,15 @@
+{
+  "name": "Manikanta Safety Solutions",
+  "short_name": "Manikanta Safety Solutions",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "theme_color": "#0D5C5C",
+  "background_color": "#FFFFFF",
+  "display": "standalone",
+  "start_url": "/"
+}

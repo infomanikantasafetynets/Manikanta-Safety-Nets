@@ -1,0 +1,1 @@
+Drop material/product photos here. Recommended: square images, 1000x1000px minimum, JPG or WebP format. Update image paths in data/products.ts or relevant component after adding new files.

@@ -1,0 +1,172 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-50: #F0F7F7;
+  --color-primary-100: #D8EDED;
+  --color-primary-200: #B2DCDC;
+  --color-primary-300: #85C5C5;
+  --color-primary-400: #4A9B9B;
+  --color-primary-500: #2C7D7D;
+  --color-primary-600: #1B6868;
+  --color-primary-700: #0D5C5C;
+  --color-primary-800: #094747;
+  --color-primary-900: #063333;
+  
+  --color-teal-dark: #063333;
+  --color-teal-primary: #0D5C5C;
+  --color-teal-light: #4A9B9B;
+  
+  --color-accent-amber: #E8972F;
+  --color-accent-amber-light: #F5B054;
+  --color-accent-amber-dark: #C97A19;
+  
+  --color-success-green: #25D366;
+  --color-bg-light: #FAFAFA;
+  --color-border-subtle: #E2E8F0;
+  
+  --color-text-primary: #1A1A1A;
+  --color-text-secondary: #4A4A4A;
+  
+  --font-sans: var(--font-inter), var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom premium scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAFAFA;
+}
+::-webkit-scrollbar-thumb {
+  background: #0D5C5C;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E8972F;
+}
+
+/* Text Gradient Utility */
+.text-gradient {
+  background: linear-gradient(135deg, #0D5C5C 0%, #E8972F 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Deep Teal & Light Teal CTA Button Utilities */
+.btn-primary-teal, .btn-primary-accent, .btn-accent {
+  background: linear-gradient(135deg, #0D5C5C 0%, #4A9B9B 100%);
+  color: #ffffff;
+  font-weight: 800;
+  border-radius: 9999px;
+  box-shadow: 0 10px 25px rgba(13, 92, 92, 0.35);
+  transition: all 300ms ease;
+}
+.btn-primary-teal:hover, .btn-primary-accent:hover, .btn-accent:hover {
+  background: linear-gradient(135deg, #4A9B9B 0%, #0D5C5C 100%);
+  color: #ffffff;
+  box-shadow: 0 15px 30px rgba(13, 92, 92, 0.50);
+  transform: translateY(-2px);
+}
+
+.btn-amber {
+  background: linear-gradient(135deg, #E8972F 0%, #F5B054 100%);
+  color: #ffffff;
+  font-weight: 800;
+  border-radius: 9999px;
+  box-shadow: 0 10px 25px rgba(232, 151, 47, 0.35);
+  transition: all 300ms ease;
+}
+.btn-amber:hover {
+  background: linear-gradient(135deg, #F5B054 0%, #E8972F 100%);
+  color: #ffffff;
+  box-shadow: 0 15px 30px rgba(232, 151, 47, 0.50);
+  transform: translateY(-2px);
+}
+
+.btn-secondary-teal {
+  background: transparent;
+  border: 2px solid #E8972F;
+  color: #ffffff;
+  border-radius: 9999px;
+  transition: all 300ms ease;
+}
+.btn-secondary-teal:hover {
+  background: #E8972F;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Card Hover Animation Utility */
+.card-premium {
+  background: #ffffff;
+  border: 1px solid #E2E8F0;
+  border-radius: 20px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.04);
+  transition: all 300ms ease;
+}
+.card-premium:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 45px rgba(13, 92, 92, 0.08);
+  border-color: #E8972F;
+}
+
+/* Custom scroll-margin for anchor links */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+/* Continuous Marquee Animation */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marquee-reverse {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 25s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+.animate-marquee-fast {
+  display: flex;
+  width: max-content;
+  animation: marquee 16s linear infinite;
+}
+
+.animate-marquee-reverse {
+  display: flex;
+  width: max-content;
+  animation: marquee-reverse 25s linear infinite;
+}
+
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.92; transform: scale(1.03); }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 2s infinite ease-in-out;
+}

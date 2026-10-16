@@ -113,6 +113,13 @@ export default function Navbar() {
 
   return (
     <>
+      {/* Complete header sentinel for scroll-based detection of entire header area */}
+      <div
+        id="complete-header-sentinel"
+        className="absolute top-0 left-0 right-0 h-[96px] sm:h-[104px] pointer-events-none -z-50 invisible"
+        aria-hidden="true"
+      />
+
       {/* PART 1: TOP BAR (Charcoal Black #1F1F1F with Red Accents) */}
       <div className="fixed top-0 left-0 right-0 z-50 bg-[#0D5C5C] text-white text-xs font-medium py-1.5 px-3 sm:px-4 shadow-sm border-b border-[#1B6868]">
         <div className="max-w-7xl mx-auto flex items-center justify-between gap-2 sm:gap-4">

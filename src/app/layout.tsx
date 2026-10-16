@@ -4,6 +4,7 @@ import Script from "next/script";
 import Navbar from "@/components/navigation/Navbar";
 import Footer from "@/components/navigation/Footer";
 import FloatingCTA from "@/components/shared/FloatingCTA";
+import SideFloatingContact from "@/components/shared/SideFloatingContact";
 import CookieConsent from "@/components/ui/CookieConsent";
 import "./globals.css";
 
@@ -121,6 +122,7 @@ export default function RootLayout({
         <main className="flex-grow pt-[96px] sm:pt-[102px] lg:pt-[108px]">{children}</main>
         <Footer />
         <FloatingCTA />
+        <SideFloatingContact />
         <CookieConsent />
       </body>
     </html>

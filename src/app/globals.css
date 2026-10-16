@@ -170,3 +170,75 @@ html {
 .animate-pulse-subtle {
   animation: pulse-subtle 2s infinite ease-in-out;
 }
+
+/* Periodic subtle shake animation for left-side floating buttons */
+@keyframes shake-periodic-1 {
+  0%, 70%, 100% {
+    transform: rotate(0deg) scale(1);
+  }
+  73% {
+    transform: rotate(-9deg) scale(1.05);
+  }
+  76% {
+    transform: rotate(9deg) scale(1.05);
+  }
+  79% {
+    transform: rotate(-6deg) scale(1.02);
+  }
+  82% {
+    transform: rotate(6deg) scale(1.02);
+  }
+  85% {
+    transform: rotate(-3deg);
+  }
+  88% {
+    transform: rotate(3deg);
+  }
+  91% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+@keyframes shake-periodic-2 {
+  0%, 76%, 100% {
+    transform: rotate(0deg) scale(1);
+  }
+  79% {
+    transform: rotate(-9deg) scale(1.05);
+  }
+  82% {
+    transform: rotate(9deg) scale(1.05);
+  }
+  85% {
+    transform: rotate(-6deg) scale(1.02);
+  }
+  88% {
+    transform: rotate(6deg) scale(1.02);
+  }
+  91% {
+    transform: rotate(-3deg);
+  }
+  94% {
+    transform: rotate(3deg);
+  }
+  97% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+.animate-shake-loop-1 {
+  animation: shake-periodic-1 4.5s ease-in-out infinite;
+  transform-origin: center center;
+}
+
+.animate-shake-loop-2 {
+  animation: shake-periodic-2 4.5s ease-in-out infinite;
+  transform-origin: center center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-shake-loop-1,
+  .animate-shake-loop-2 {
+    animation: none !important;
+  }
+}

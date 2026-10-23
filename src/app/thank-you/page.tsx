@@ -47,11 +47,11 @@ export default function ThankYouPage() {
               <span>Call: 9550318183</span>
             </a>
             <a
-              href="tel:+917013818183"
+              href="tel:+918121529988"
               className="flex items-center justify-center gap-1.5 bg-slate-50 hover:bg-slate-100 text-slate-700 border border-slate-200 py-2.5 rounded-xl text-xs font-bold transition-all cursor-pointer"
             >
               <Phone className="w-3.5 h-3.5 text-slate-500" />
-              <span>Alt: 7013818183</span>
+              <span>Alt: 8121529988</span>
             </a>
             <a
               href="https://wa.me/919550318183?text=Hi%20Manikanta%20Safety%20Solutions%2C%20I%20would%20like%20to%20request%20a%20free%20quote%20for%20safety%20nets%2Finvisible%20grills."

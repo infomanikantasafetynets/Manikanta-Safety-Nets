@@ -93,7 +93,7 @@ export async function fetchSiteSettings() {
     return {
       businessName: "Manikanta Safety Solutions",
       phone: "+91 95503 18183",
-      secondaryPhone: "+91 70138 18183",
+      secondaryPhone: "+91 81215 29988",
       email: "info.manikantasafetynets@gmail.com",
       showNewsletter: true,
       socialLinks: {
@@ -116,7 +116,7 @@ export async function fetchSiteSettings() {
     return {
       businessName: "Manikanta Safety Solutions",
       phone: "+91 95503 18183",
-      secondaryPhone: "+91 70138 18183",
+      secondaryPhone: "+91 81215 29988",
       email: "info.manikantasafetynets@gmail.com",
       showNewsletter: true,
       socialLinks: {

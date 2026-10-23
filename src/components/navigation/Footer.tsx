@@ -112,11 +112,11 @@ export default function Footer() {
                     <span>+91 95503 18183 (Primary)</span>
                   </a>
                   <a
-                    href="tel:+917013818183"
+                    href="tel:+918121529988"
                     className="hover:text-[#E8972F] transition-colors text-slate-200 text-sm flex items-center gap-1.5 min-h-[44px] py-1"
-                    aria-label="Call Alternate Phone Number +91 70138 18183"
+                    aria-label="Call Alternate Phone Number +91 81215 29988"
                   >
-                    <span>+91 70138 18183 (Alt)</span>
+                    <span>+91 81215 29988 (Alt)</span>
                   </a>
                 </div>
               </li>

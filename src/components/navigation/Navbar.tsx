@@ -479,11 +479,11 @@ export default function Navbar() {
                   <span>Call +91 95503 18183 (Primary)</span>
                 </a>
                 <a
-                  href="tel:+917013818183"
+                  href="tel:+918121529988"
                   className="bg-[#0D5C5C] text-white hover:bg-[#1B6868] py-3 text-center rounded-full text-sm font-extrabold flex items-center justify-center gap-2 transition-colors border border-[#1B6868]"
                 >
                   <Phone className="w-4 h-4 text-[#E8972F]" />
-                  <span>Call +91 70138 18183 (Alt)</span>
+                  <span>Call +91 81215 29988 (Alt)</span>
                 </a>
                 <a
                   href="https://wa.me/919550318183?text=Hi%20Manikanta%20Safety%20Solutions%2C%20I%20would%20like%20to%20request%20a%20free%20quote."

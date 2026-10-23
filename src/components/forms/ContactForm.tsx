@@ -132,8 +132,8 @@ export default function ContactForm() {
                       +91 95503 18183 <span className="text-xs font-semibold text-amber-200">(Primary)</span>
                     </a>
                     <span className="text-slate-300">|</span>
-                    <a href="tel:+917013818183" className="text-sm sm:text-base font-bold text-white hover:text-amber-200 transition-colors">
-                      +91 70138 18183 <span className="text-xs font-semibold text-amber-200">(Alt)</span>
+                    <a href="tel:+918121529988" className="text-sm sm:text-base font-bold text-white hover:text-amber-200 transition-colors">
+                      +91 81215 29988 <span className="text-xs font-semibold text-amber-200">(Alt)</span>
                     </a>
                   </div>
                 </div>

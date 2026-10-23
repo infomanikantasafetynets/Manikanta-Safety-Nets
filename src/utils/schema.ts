@@ -64,7 +64,7 @@ export function generateOrganizationSchema() {
       },
       {
         "@type": "ContactPoint",
-        "telephone": "+91 70138 18183",
+        "telephone": "+91 81215 29988",
         "contactType": "technical support",
         "areaServed": "IN",
         "availableLanguage": ["English", "Tamil", "Telugu", "Hindi"],
@@ -87,7 +87,7 @@ export function generateLocalBusinessSchema(areaName?: string) {
       ? `https://manikantasafetysolutions.in/areas/${areaName.toLowerCase().replace(/\s+/g, "-")}`
       : "https://manikantasafetysolutions.in",
     "telephone": "+91 95503 18183",
-    "alternatePhone": "+91 70138 18183",
+    "alternatePhone": "+91 81215 29988",
     "email": "info.manikantasafetynets@gmail.com",
     "image": "https://manikantasafetysolutions.in/images/og-image.webp",
     "logo": "https://manikantasafetysolutions.in/images/logo/manikanta-safety-solutions-logo-light.svg",

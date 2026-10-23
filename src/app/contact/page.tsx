@@ -102,6 +102,10 @@ export default function ContactPage() {
                     <span>+91 95503 18183</span>
                     <span className="text-[10px] bg-emerald-50 text-[#0D5C5C] px-2 py-0.5 rounded font-bold">Direct Line</span>
                   </a>
+                  <a href="tel:+918121529988" className="text-sm font-bold text-slate-700 hover:text-[#E8972F] transition-colors flex items-center gap-2">
+                    <span>+91 81215 29988</span>
+                    <span className="text-[10px] bg-amber-50 text-[#E8972F] px-2 py-0.5 rounded font-bold">Secondary Line</span>
+                  </a>
                 </div>
               </div>
 
